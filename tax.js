@@ -1,0 +1,13 @@
+var userInput = prompt("Please tell me a price and I will calculate the tax and the final price for you");
+console.log(userInput);
+var price = parseFloat(userInput.replace(",", "."));
+console.log(price);
+var tax = Math.round(price * 19) / 100;
+console.log(tax);
+var price_with_tax = price + tax;
+console.log(price_with_tax);
+document.write('</br>');
+document.write('</br>');
+document.write("Your price is: " + price + ' €' + '</br>');
+document.write("The tax is: " + tax + ' €' + '</br>');
+document.write("The final price is: " + price_with_tax + ' €' + '</br>');
