@@ -1,4 +1,4 @@
-var userInput = prompt("Please tell me a price and I will calculate the tax and the final price for you");
+var userInput = prompt("Please tell me a net price and I will calculate the 19% tax and the final price for you");
 console.log(userInput);
 var price = parseFloat(userInput.replace(",", "."));
 console.log(price);
@@ -8,6 +8,6 @@ var price_with_tax = price + tax;
 console.log(price_with_tax);
 document.write('</br>');
 document.write('</br>');
-document.write("Your price is: " + price + ' €' + '</br>');
-document.write("The tax is: " + tax + ' €' + '</br>');
+document.write("Your net price is: " + price + ' €' + '</br>');
+document.write("The 19% tax is: " + tax + ' €' + '</br>');
 document.write("The final price is: " + price_with_tax + ' €' + '</br>');
